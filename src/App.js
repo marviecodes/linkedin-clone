@@ -6,7 +6,6 @@ function App() {
     <div className="app">
       {/* Header */}
       <Header />
-      <Header />
       {/* <Header /> */}
       {/* App body */}
       {/* Sidebar */}
