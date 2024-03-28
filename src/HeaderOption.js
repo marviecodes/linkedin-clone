@@ -1,10 +1,13 @@
 import "./HeaderOption.css";
+import Avatar from "@mui/material/Avatar";
+//import {Avatar} from '@mui/material'
 
-const HeaderOption = ({ title, Icon }) => {
+const HeaderOption = ({ title, Icon, avatar }) => {
   return (
     <div className="headerOption">
-      {Icon && <Icon className="HeaderOption__icon" />}
-      <h3 className="HeaderOption__title">{title}</h3>
+      {Icon && <Icon className="headerOption__icon" />}
+      {avatar && <Avatar className="headerOption__icon" src={avatar} />}
+      <h3 className="headerOption__title">{title}</h3>
     </div>
   );
 };
